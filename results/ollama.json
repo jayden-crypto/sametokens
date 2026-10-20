@@ -1,0 +1,68 @@
+[
+ {
+  "case": "NFC: Xin chào thế giới, hôm nay bạn khỏe không?",
+  "reference": 13,
+  "llama.cpp": 13,
+  "ollama": 13
+ },
+ {
+  "case": "NFD: Xin chào thế giới, hôm nay bạn khỏe không?",
+  "reference": 13,
+  "llama.cpp": 34,
+  "ollama": 34
+ },
+ {
+  "case": "NFC: Tôi muốn đặt một bàn cho hai người vào tối nay.",
+  "reference": 13,
+  "llama.cpp": 13,
+  "ollama": 13
+ },
+ {
+  "case": "NFD: Tôi muốn đặt một bàn cho hai người vào tối nay.",
+  "reference": 13,
+  "llama.cpp": 46,
+  "ollama": 46
+ },
+ {
+  "case": "NFC: Le café était délicieux, mais l'addition était trop élevée.",
+  "reference": 17,
+  "llama.cpp": 17,
+  "ollama": 17
+ },
+ {
+  "case": "NFD: Le café était délicieux, mais l'addition était trop élevée.",
+  "reference": 17,
+  "llama.cpp": 29,
+  "ollama": 29
+ },
+ {
+  "case": "NFC: Où est la gare la plus proche, s'il vous plaît ?",
+  "reference": 17,
+  "llama.cpp": 17,
+  "ollama": 17
+ },
+ {
+  "case": "NFD: Où est la gare la plus proche, s'il vous plaît ?",
+  "reference": 17,
+  "llama.cpp": 21,
+  "ollama": 21
+ },
+ {
+  "case": "html strikethrough",
+  "reference": 10,
+  "llama.cpp": 8,
+  "ollama": 8
+ },
+ {
+  "case": "eos lookalike",
+  "reference": 5,
+  "llama.cpp": 4,
+  "ollama": 4
+ },
+ {
+  "case": "control",
+  "reference": 10,
+  "llama.cpp": 10,
+  "ollama": 10
+ }
+]

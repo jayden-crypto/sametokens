@@ -1,0 +1,17 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# large local artifacts
+models/
+gguf/
+third_party/
+js/node_modules/
+results/*.log

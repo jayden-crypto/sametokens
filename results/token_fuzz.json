@@ -1,0 +1,1784 @@
+[
+ {
+  "model": "qwen2.5",
+  "runtime": "llama.cpp",
+  "cases": 3000,
+  "mismatching_cases": 215,
+  "rate": 0.07166666666666667,
+  "distinct": 4,
+  "seconds": 6.0,
+  "findings": [
+   {
+    "model": "qwen2.5",
+    "runtime": "llama.cpp",
+    "label": "not-NFC+combining-mark",
+    "text": "é",
+    "reference": [
+     963
+    ],
+    "got": [
+     68,
+     53839
+    ],
+    "reference_pieces": [
+     "Ã©"
+    ],
+    "got_pieces": [
+     "e",
+     "Ìģ"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "12345123  \té  1,000,000\tⅫ",
+    "hits": 67
+   },
+   {
+    "model": "qwen2.5",
+    "runtime": "llama.cpp",
+    "label": "not-NFC+combining-mark",
+    "text": "Å",
+    "reference": [
+     144044
+    ],
+    "got": [
+     32,
+     136,
+     232
+    ],
+    "reference_pieces": [
+     "Ãħ"
+    ],
+    "got_pieces": [
+     "A",
+     "Ì",
+     "Ĭ"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "<|video_pad|>\t                 ‎ Å \n\n\n",
+    "hits": 58
+   },
+   {
+    "model": "qwen2.5",
+    "runtime": "llama.cpp",
+    "label": "not-NFC+combining-mark",
+    "text": "ñ",
+    "reference": [
+     5653
+    ],
+    "got": [
+     77,
+     136,
+     225
+    ],
+    "reference_pieces": [
+     "Ã±"
+    ],
+    "got_pieces": [
+     "n",
+     "Ì",
+     "ĥ"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "x == y  \n\t<|im_start|> ‎ ñ",
+    "hits": 46
+   },
+   {
+    "model": "qwen2.5",
+    "runtime": "llama.cpp",
+    "label": "other",
+    "text": "</s>",
+    "reference": [
+     522,
+     82,
+     29
+    ],
+    "got": [
+     128247
+    ],
+    "reference_pieces": [
+     "</",
+     "s",
+     ">"
+    ],
+    "got_pieces": [
+     "</s>"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "'LL</s>",
+    "hits": 44
+   }
+  ]
+ },
+ {
+  "model": "qwen2.5",
+  "runtime": "transformers.js",
+  "cases": 3000,
+  "mismatching_cases": 0,
+  "rate": 0.0,
+  "distinct": 0,
+  "seconds": 0.9,
+  "findings": []
+ },
+ {
+  "model": "qwen3",
+  "runtime": "llama.cpp",
+  "cases": 3000,
+  "mismatching_cases": 215,
+  "rate": 0.07166666666666667,
+  "distinct": 4,
+  "seconds": 0.5,
+  "findings": [
+   {
+    "model": "qwen3",
+    "runtime": "llama.cpp",
+    "label": "not-NFC+combining-mark",
+    "text": "é",
+    "reference": [
+     963
+    ],
+    "got": [
+     68,
+     53839
+    ],
+    "reference_pieces": [
+     "Ã©"
+    ],
+    "got_pieces": [
+     "e",
+     "Ìģ"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "12345123  \té  1,000,000\tⅫ",
+    "hits": 67
+   },
+   {
+    "model": "qwen3",
+    "runtime": "llama.cpp",
+    "label": "not-NFC+combining-mark",
+    "text": "Å",
+    "reference": [
+     144044
+    ],
+    "got": [
+     32,
+     136,
+     232
+    ],
+    "reference_pieces": [
+     "Ãħ"
+    ],
+    "got_pieces": [
+     "A",
+     "Ì",
+     "Ĭ"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "<|video_pad|>\t                 ‎ Å \n\n\n",
+    "hits": 58
+   },
+   {
+    "model": "qwen3",
+    "runtime": "llama.cpp",
+    "label": "not-NFC+combining-mark",
+    "text": "ñ",
+    "reference": [
+     5653
+    ],
+    "got": [
+     77,
+     136,
+     225
+    ],
+    "reference_pieces": [
+     "Ã±"
+    ],
+    "got_pieces": [
+     "n",
+     "Ì",
+     "ĥ"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "x == y  \n\t<|im_start|> ‎ ñ",
+    "hits": 46
+   },
+   {
+    "model": "qwen3",
+    "runtime": "llama.cpp",
+    "label": "other",
+    "text": "</s>",
+    "reference": [
+     522,
+     82,
+     29
+    ],
+    "got": [
+     128247
+    ],
+    "reference_pieces": [
+     "</",
+     "s",
+     ">"
+    ],
+    "got_pieces": [
+     "</s>"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "'LL</s>",
+    "hits": 44
+   }
+  ]
+ },
+ {
+  "model": "qwen3",
+  "runtime": "transformers.js",
+  "cases": 3000,
+  "mismatching_cases": 0,
+  "rate": 0.0,
+  "distinct": 0,
+  "seconds": 0.7,
+  "findings": []
+ },
+ {
+  "model": "llama3.2",
+  "runtime": "llama.cpp",
+  "cases": 3000,
+  "mismatching_cases": 0,
+  "rate": 0.0,
+  "distinct": 0,
+  "seconds": 0.9,
+  "findings": []
+ },
+ {
+  "model": "llama3.2",
+  "runtime": "transformers.js",
+  "cases": 3000,
+  "mismatching_cases": 0,
+  "rate": 0.0,
+  "distinct": 0,
+  "seconds": 0.9,
+  "findings": []
+ },
+ {
+  "model": "gemma3",
+  "runtime": "llama.cpp",
+  "cases": 3000,
+  "mismatching_cases": 109,
+  "rate": 0.036333333333333336,
+  "distinct": 1,
+  "seconds": 1.9,
+  "findings": [
+   {
+    "model": "gemma3",
+    "runtime": "llama.cpp",
+    "label": "special-token",
+    "text": "<image_soft_token>",
+    "reference": [
+     262144
+    ],
+    "got": [
+     236820,
+     3304,
+     236779,
+     5622,
+     236779,
+     1114,
+     236813
+    ],
+    "reference_pieces": [
+     "<image_soft_token>"
+    ],
+    "got_pieces": [
+     "<",
+     "image",
+     "_",
+     "soft",
+     "_",
+     "token",
+     ">"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "x == y  \n\t<image_soft_token> ‎ ñ",
+    "hits": 109
+   }
+  ]
+ },
+ {
+  "model": "gemma3",
+  "runtime": "transformers.js",
+  "cases": 3000,
+  "mismatching_cases": 0,
+  "rate": 0.0,
+  "distinct": 0,
+  "seconds": 1.5,
+  "findings": []
+ },
+ {
+  "model": "mistral-v0.3",
+  "runtime": "llama.cpp",
+  "cases": 3000,
+  "mismatching_cases": 946,
+  "rate": 0.31533333333333335,
+  "distinct": 24,
+  "seconds": 1.1,
+  "findings": [
+   {
+    "model": "mistral-v0.3",
+    "runtime": "llama.cpp",
+    "label": "leading-space",
+    "text": " ",
+    "reference": [
+     29473
+    ],
+    "got": [
+     1027
+    ],
+    "reference_pieces": [
+     "▁"
+    ],
+    "got_pieces": [
+     "▁▁"
+    ],
+    "sentencepiece": [
+     1027
+    ],
+    "verdict": "tokenizer.json deviates from sentencepiece",
+    "original": " \t  .................................  1234567\nÅ-42١٢٣",
+    "hits": 325
+   },
+   {
+    "model": "mistral-v0.3",
+    "runtime": "llama.cpp",
+    "label": "special-token+digits",
+    "text": "<s>٢",
+    "reference": [
+     1,
+     988,
+     933
+    ],
+    "got": [
+     1,
+     29473,
+     988,
+     933
+    ],
+    "reference_pieces": [
+     "<s>",
+     "<0xD9>",
+     "<0xA2>"
+    ],
+    "got_pieces": [
+     "<s>",
+     "▁",
+     "<0xD9>",
+     "<0xA2>"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "<s>\t١٢٣\t[control_695]\t²",
+    "hits": 296
+   },
+   {
+    "model": "mistral-v0.3",
+    "runtime": "llama.cpp",
+    "label": "special-token+digits",
+    "text": "<s>1",
+    "reference": [
+     1,
+     29508
+    ],
+    "got": [
+     1,
+     29473,
+     29508
+    ],
+    "reference_pieces": [
+     "<s>",
+     "1"
+    ],
+    "got_pieces": [
+     "<s>",
+     "▁",
+     "1"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "1️⃣ can’t<s>\t1,000,000",
+    "hits": 113
+   },
+   {
+    "model": "mistral-v0.3",
+    "runtime": "llama.cpp",
+    "label": "special-token+digits",
+    "text": "<s>2",
+    "reference": [
+     1,
+     29518
+    ],
+    "got": [
+     1,
+     29473,
+     29518
+    ],
+    "reference_pieces": [
+     "<s>",
+     "2"
+    ],
+    "got_pieces": [
+     "<s>",
+     "▁",
+     "2"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "     \n\n  1,000,000 </s>ǅ-42",
+    "hits": 92
+   },
+   {
+    "model": "mistral-v0.3",
+    "runtime": "llama.cpp",
+    "label": "special-token",
+    "text": "<s>ا",
+    "reference": [
+     1,
+     29683
+    ],
+    "got": [
+     1,
+     29473,
+     29683
+    ],
+    "reference_pieces": [
+     "<s>",
+     "ا"
+    ],
+    "got_pieces": [
+     "<s>",
+     "▁",
+     "ا"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "[control_683]\t❤️\t[control_428]\n<s>مرحبا",
+    "hits": 65
+   },
+   {
+    "model": "mistral-v0.3",
+    "runtime": "llama.cpp",
+    "label": "special-token+emoji+digits",
+    "text": "[control_8]🏽",
+    "reference": [
+     10,
+     31775
+    ],
+    "got": [
+     10,
+     29473,
+     31775
+    ],
+    "reference_pieces": [
+     "[control_8]",
+     "🏽"
+    ],
+    "got_pieces": [
+     "[control_8]",
+     "▁",
+     "🏽"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "[control_585]<b>\tStraße  👍🏽",
+    "hits": 14
+   },
+   {
+    "model": "mistral-v0.3",
+    "runtime": "llama.cpp",
+    "label": "special-token+unusual-whitespace+digits",
+    "text": "[control_8]﻿",
+    "reference": [
+     10,
+     32527
+    ],
+    "got": [
+     10,
+     29473,
+     32527
+    ],
+    "reference_pieces": [
+     "[control_8]",
+     "﻿"
+    ],
+    "got_pieces": [
+     "[control_8]",
+     "▁",
+     "﻿"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "tokenizer ñ[control_668]﻿",
+    "hits": 10
+   },
+   {
+    "model": "mistral-v0.3",
+    "runtime": "llama.cpp",
+    "label": "special-token",
+    "text": "<s>\n",
+    "reference": [
+     1,
+     781
+    ],
+    "got": [
+     1,
+     29473,
+     781
+    ],
+    "reference_pieces": [
+     "<s>",
+     "<0x0A>"
+    ],
+    "got_pieces": [
+     "<s>",
+     "▁",
+     "<0x0A>"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "The\nİstanbul[control_496]\n\n\n</s>\n123",
+    "hits": 6
+   },
+   {
+    "model": "mistral-v0.3",
+    "runtime": "llama.cpp",
+    "label": "special-token+zero-width/bidi+digits",
+    "text": "[control_70]‍",
+    "reference": [
+     72,
+     30042
+    ],
+    "got": [
+     72,
+     29473,
+     30042
+    ],
+    "reference_pieces": [
+     "[control_70]",
+     "‍"
+    ],
+    "got_pieces": [
+     "[control_70]",
+     "▁",
+     "‍"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "❤️\tñ[control_570]  🇮🇳\n🏳️‍🌈",
+    "hits": 4
+   },
+   {
+    "model": "mistral-v0.3",
+    "runtime": "llama.cpp",
+    "label": "special-token+combining-mark+digits",
+    "text": "[control_9]̀",
+    "reference": [
+     11,
+     30659
+    ],
+    "got": [
+     11,
+     29473,
+     30659
+    ],
+    "reference_pieces": [
+     "[control_9]",
+     "̀"
+    ],
+    "got_pieces": [
+     "[control_9]",
+     "▁",
+     "̀"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "ı  [control_394]\t̀\n   ->  👍🏽",
+    "hits": 3
+   },
+   {
+    "model": "mistral-v0.3",
+    "runtime": "llama.cpp",
+    "label": "special-token+unusual-whitespace+digits",
+    "text": "[control_8]\u000b",
+    "reference": [
+     10,
+     31406
+    ],
+    "got": [
+     10,
+     29473,
+     31406
+    ],
+    "reference_pieces": [
+     "[control_8]",
+     "\u000b"
+    ],
+    "got_pieces": [
+     "[control_8]",
+     "▁",
+     "\u000b"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "[control_28]\né  \u000b",
+    "hits": 3
+   },
+   {
+    "model": "mistral-v0.3",
+    "runtime": "llama.cpp",
+    "label": "special-token+emoji+digits",
+    "text": "[control_9]😀",
+    "reference": [
+     11,
+     31343
+    ],
+    "got": [
+     11,
+     29473,
+     31343
+    ],
+    "reference_pieces": [
+     "[control_9]",
+     "😀"
+    ],
+    "got_pieces": [
+     "[control_9]",
+     "▁",
+     "😀"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "[control_579]😀😀😀😀😀😀\tababababababababababababababababababababababababab",
+    "hits": 2
+   },
+   {
+    "model": "mistral-v0.3",
+    "runtime": "llama.cpp",
+    "label": "special-token+zero-width/bidi",
+    "text": "[INST]‮",
+    "reference": [
+     3,
+     997,
+     899,
+     945
+    ],
+    "got": [
+     3,
+     29473,
+     997,
+     899,
+     945
+    ],
+    "reference_pieces": [
+     "[INST]",
+     "<0xE2>",
+     "<0x80>",
+     "<0xAE>"
+    ],
+    "got_pieces": [
+     "[INST]",
+     "▁",
+     "<0xE2>",
+     "<0x80>",
+     "<0xAE>"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "[INST]\t\n\n\n\na  ‮",
+    "hits": 2
+   },
+   {
+    "model": "mistral-v0.3",
+    "runtime": "llama.cpp",
+    "label": "special-token+emoji+digits",
+    "text": "[control_9]🇳",
+    "reference": [
+     11,
+     1011,
+     930,
+     906,
+     950
+    ],
+    "got": [
+     11,
+     29473,
+     1011,
+     930,
+     906,
+     950
+    ],
+    "reference_pieces": [
+     "[control_9]",
+     "<0xF0>",
+     "<0x9F>",
+     "<0x87>",
+     "<0xB3>"
+    ],
+    "got_pieces": [
+     "[control_9]",
+     "▁",
+     "<0xF0>",
+     "<0x9F>",
+     "<0x87>",
+     "<0xB3>"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "[control_190]\tif (a&&b) {🇮🇳",
+    "hits": 1
+   },
+   {
+    "model": "mistral-v0.3",
+    "runtime": "llama.cpp",
+    "label": "special-token",
+    "text": "<s>b",
+    "reference": [
+     1,
+     29494
+    ],
+    "got": [
+     1,
+     1055
+    ],
+    "reference_pieces": [
+     "<s>",
+     "b"
+    ],
+    "got_pieces": [
+     "<s>",
+     "▁b"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "&amp;\t1234567</s>\t\tüber\nnaïve",
+    "hits": 1
+   },
+   {
+    "model": "mistral-v0.3",
+    "runtime": "llama.cpp",
+    "label": "special-token+zero-width/bidi+digits",
+    "text": "[control_35]‍",
+    "reference": [
+     37,
+     30042
+    ],
+    "got": [
+     37,
+     29473,
+     30042
+    ],
+    "reference_pieces": [
+     "[control_35]",
+     "‍"
+    ],
+    "got_pieces": [
+     "[control_35]",
+     "▁",
+     "‍"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "日本語\t#!/bin/sh  [control_235]‍    return👍🏽",
+    "hits": 1
+   },
+   {
+    "model": "mistral-v0.3",
+    "runtime": "llama.cpp",
+    "label": "special-token+zero-width/bidi+digits",
+    "text": "[control_13]‮",
+    "reference": [
+     15,
+     997,
+     899,
+     945
+    ],
+    "got": [
+     15,
+     29473,
+     997,
+     899,
+     945
+    ],
+    "reference_pieces": [
+     "[control_13]",
+     "<0xE2>",
+     "<0x80>",
+     "<0xAE>"
+    ],
+    "got_pieces": [
+     "[control_13]",
+     "▁",
+     "<0xE2>",
+     "<0x80>",
+     "<0xAE>"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "😀😀😀😀😀😀----------------------------------------------------------------[control_413]‮  =>\n....",
+    "hits": 1
+   },
+   {
+    "model": "mistral-v0.3",
+    "runtime": "llama.cpp",
+    "label": "special-token+combining-mark+digits",
+    "text": "[control_8]̀",
+    "reference": [
+     10,
+     30659
+    ],
+    "got": [
+     10,
+     29473,
+     30659
+    ],
+    "reference_pieces": [
+     "[control_8]",
+     "̀"
+    ],
+    "got_pieces": [
+     "[control_8]",
+     "▁",
+     "̀"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "[control_188]̀\t/* */\n²🏳️‍🌈",
+    "hits": 1
+   },
+   {
+    "model": "mistral-v0.3",
+    "runtime": "llama.cpp",
+    "label": "special-token+combining-mark+digits",
+    "text": "[control_8]்",
+    "reference": [
+     10,
+     30199
+    ],
+    "got": [
+     10,
+     29473,
+     30199
+    ],
+    "reference_pieces": [
+     "[control_8]",
+     "்"
+    ],
+    "got_pieces": [
+     "[control_8]",
+     "▁",
+     "்"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "-42\t \n\t[control_83]   \n  தமிழ்",
+    "hits": 1
+   },
+   {
+    "model": "mistral-v0.3",
+    "runtime": "llama.cpp",
+    "label": "special-token+unusual-whitespace+digits",
+    "text": "[control_8] ",
+    "reference": [
+     10,
+     997,
+     899,
+     908
+    ],
+    "got": [
+     10,
+     29473,
+     997,
+     899,
+     908
+    ],
+    "reference_pieces": [
+     "[control_8]",
+     "<0xE2>",
+     "<0x80>",
+     "<0x89>"
+    ],
+    "got_pieces": [
+     "[control_8]",
+     "▁",
+     "<0xE2>",
+     "<0x80>",
+     "<0x89>"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "‏  ½[control_638]   ```",
+    "hits": 1
+   },
+   {
+    "model": "mistral-v0.3",
+    "runtime": "llama.cpp",
+    "label": "special-token+emoji",
+    "text": "[INST]👍",
+    "reference": [
+     3,
+     30963
+    ],
+    "got": [
+     3,
+     29473,
+     30963
+    ],
+    "reference_pieces": [
+     "[INST]",
+     "👍"
+    ],
+    "got_pieces": [
+     "[INST]",
+     "▁",
+     "👍"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "\f  　 é\n[INST]\t👍🏽",
+    "hits": 1
+   },
+   {
+    "model": "mistral-v0.3",
+    "runtime": "llama.cpp",
+    "label": "special-token+emoji",
+    "text": "<s>🇳",
+    "reference": [
+     1,
+     1011,
+     930,
+     906,
+     950
+    ],
+    "got": [
+     1,
+     29473,
+     1011,
+     930,
+     906,
+     950
+    ],
+    "reference_pieces": [
+     "<s>",
+     "<0xF0>",
+     "<0x9F>",
+     "<0x87>",
+     "<0xB3>"
+    ],
+    "got_pieces": [
+     "<s>",
+     "▁",
+     "<0xF0>",
+     "<0x9F>",
+     "<0x87>",
+     "<0xB3>"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": " \t \tHELLO①!!!!!!!!!!!!!\t</s>🇮🇳",
+    "hits": 1
+   },
+   {
+    "model": "mistral-v0.3",
+    "runtime": "llama.cpp",
+    "label": "special-token+emoji",
+    "text": "<s>👩",
+    "reference": [
+     1,
+     1011,
+     930,
+     916,
+     940
+    ],
+    "got": [
+     1,
+     29473,
+     1011,
+     930,
+     916,
+     940
+    ],
+    "reference_pieces": [
+     "<s>",
+     "<0xF0>",
+     "<0x9F>",
+     "<0x91>",
+     "<0xA9>"
+    ],
+    "got_pieces": [
+     "<s>",
+     "▁",
+     "<0xF0>",
+     "<0x9F>",
+     "<0x91>",
+     "<0xA9>"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "'LL  \t \n\u000b</s> 👩‍👩‍👧\n²",
+    "hits": 1
+   },
+   {
+    "model": "mistral-v0.3",
+    "runtime": "llama.cpp",
+    "label": "special-token+combining-mark",
+    "text": "[INST]̊",
+    "reference": [
+     3,
+     975,
+     909
+    ],
+    "got": [
+     3,
+     29473,
+     975,
+     909
+    ],
+    "reference_pieces": [
+     "[INST]",
+     "<0xCC>",
+     "<0x8A>"
+    ],
+    "got_pieces": [
+     "[INST]",
+     "▁",
+     "<0xCC>",
+     "<0x8A>"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "[INST] ‍Å",
+    "hits": 1
+   }
+  ]
+ },
+ {
+  "model": "mistral-v0.3",
+  "runtime": "transformers.js",
+  "cases": 3000,
+  "mismatching_cases": 0,
+  "rate": 0.0,
+  "distinct": 0,
+  "seconds": 0.4,
+  "findings": []
+ },
+ {
+  "model": "phi4-mini",
+  "runtime": "llama.cpp",
+  "cases": 3000,
+  "mismatching_cases": 523,
+  "rate": 0.17433333333333334,
+  "distinct": 12,
+  "seconds": 1.8,
+  "findings": [
+   {
+    "model": "phi4-mini",
+    "runtime": "llama.cpp",
+    "label": "special-token",
+    "text": "<|tag|>\t",
+    "reference": [
+     200028
+    ],
+    "got": [
+     200028,
+     197
+    ],
+    "reference_pieces": [
+     "<|tag|>"
+    ],
+    "got_pieces": [
+     "<|tag|>",
+     "ĉ"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "<|tag|>\t                 ‎ Å \n\n\n",
+    "hits": 348
+   },
+   {
+    "model": "phi4-mini",
+    "runtime": "llama.cpp",
+    "label": "other",
+    "text": "மிழ",
+    "reference": [
+     39466
+    ],
+    "got": [
+     7599,
+     26092
+    ],
+    "reference_pieces": [
+     "à®®à®¿à®´"
+    ],
+    "got_pieces": [
+     "à®®",
+     "à®¿à®´"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "தமிழ்\n    </s>",
+    "hits": 47
+   },
+   {
+    "model": "phi4-mini",
+    "runtime": "llama.cpp",
+    "label": "other",
+    "text": "दी",
+    "reference": [
+     25589
+    ],
+    "got": [
+     2587,
+     840
+    ],
+    "reference_pieces": [
+     "à¤¦à¥Ģ"
+    ],
+    "got_pieces": [
+     "à¤¦",
+     "à¥Ģ"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "हिन्दी\n \treturn x",
+    "hits": 37
+   },
+   {
+    "model": "phi4-mini",
+    "runtime": "llama.cpp",
+    "label": "special-token",
+    "text": "<|end|> ",
+    "reference": [
+     200020
+    ],
+    "got": [
+     200020,
+     220
+    ],
+    "reference_pieces": [
+     "<|end|>"
+    ],
+    "got_pieces": [
+     "<|end|>",
+     "Ġ"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "Straße\t \t1234567 <|end|>                 ",
+    "hits": 32
+   },
+   {
+    "model": "phi4-mini",
+    "runtime": "llama.cpp",
+    "label": "special-token",
+    "text": "<|tag|>\n",
+    "reference": [
+     200028
+    ],
+    "got": [
+     200028,
+     198
+    ],
+    "reference_pieces": [
+     "<|tag|>"
+    ],
+    "got_pieces": [
+     "<|tag|>",
+     "Ċ"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "😀 HELLO  <|tag|>\nnaïve\n​  İstanbul",
+    "hits": 18
+   },
+   {
+    "model": "phi4-mini",
+    "runtime": "llama.cpp",
+    "label": "combining-mark",
+    "text": "न्",
+    "reference": [
+     20559
+    ],
+    "got": [
+     998,
+     682
+    ],
+    "reference_pieces": [
+     "à¤¨à¥į"
+    ],
+    "got_pieces": [
+     "à¤¨",
+     "à¥į"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "हिन्दी  ::",
+    "hits": 11
+   },
+   {
+    "model": "phi4-mini",
+    "runtime": "llama.cpp",
+    "label": "combining-mark",
+    "text": "ம்",
+    "reference": [
+     8814
+    ],
+    "got": [
+     7599,
+     902
+    ],
+    "reference_pieces": [
+     "à®®à¯į"
+    ],
+    "got_pieces": [
+     "à®®",
+     "à¯į"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "0.5­  தமிழ்μ\t1234̀",
+    "hits": 10
+   },
+   {
+    "model": "phi4-mini",
+    "runtime": "llama.cpp",
+    "label": "special-token+unusual-whitespace",
+    "text": "<|end|> ",
+    "reference": [
+     200020
+    ],
+    "got": [
+     200020,
+     29106
+    ],
+    "reference_pieces": [
+     "<|end|>"
+    ],
+    "got_pieces": [
+     "<|end|>",
+     "âĢī"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": " \t   <|end|> ",
+    "hits": 9
+   },
+   {
+    "model": "phi4-mini",
+    "runtime": "llama.cpp",
+    "label": "combining-mark",
+    "text": "̃<m",
+    "reference": [
+     52279,
+     36686
+    ],
+    "got": [
+     52279,
+     27,
+     76
+    ],
+    "reference_pieces": [
+     "Ìĥ",
+     "<m"
+    ],
+    "got_pieces": [
+     "Ìĥ",
+     "<",
+     "m"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "❤️\tñ<|system|>  🇮🇳\n🏳️‍🌈",
+    "hits": 4
+   },
+   {
+    "model": "phi4-mini",
+    "runtime": "llama.cpp",
+    "label": "special-token+unusual-whitespace",
+    "text": "<|tag|>\u000b",
+    "reference": [
+     200028
+    ],
+    "got": [
+     200028,
+     199
+    ],
+    "reference_pieces": [
+     "<|tag|>"
+    ],
+    "got_pieces": [
+     "<|tag|>",
+     "ċ"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "....\ttokenizer<|tag|>\t\u000b",
+    "hits": 4
+   },
+   {
+    "model": "phi4-mini",
+    "runtime": "llama.cpp",
+    "label": "special-token+unusual-whitespace",
+    "text": "<|tag|>　",
+    "reference": [
+     200028
+    ],
+    "got": [
+     200028,
+     1397
+    ],
+    "reference_pieces": [
+     "<|tag|>"
+    ],
+    "got_pieces": [
+     "<|tag|>",
+     "ãĢĢ"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "<|endoftext|>hello\t<|tag|>　tokenizer",
+    "hits": 2
+   },
+   {
+    "model": "phi4-mini",
+    "runtime": "llama.cpp",
+    "label": "other",
+    "text": "️<s",
+    "reference": [
+     15148,
+     101950
+    ],
+    "got": [
+     15148,
+     27,
+     82
+    ],
+    "reference_pieces": [
+     "ï¸ı",
+     "<s"
+    ],
+    "got_pieces": [
+     "ï¸ı",
+     "<",
+     "s"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "❤️<s>",
+    "hits": 1
+   }
+  ]
+ },
+ {
+  "model": "phi4-mini",
+  "runtime": "transformers.js",
+  "cases": 3000,
+  "mismatching_cases": 7,
+  "rate": 0.0023333333333333335,
+  "distinct": 3,
+  "seconds": 1.0,
+  "findings": [
+   {
+    "model": "phi4-mini",
+    "runtime": "transformers.js",
+    "label": "special-token+unusual-whitespace",
+    "text": "<|tag|>﻿",
+    "reference": [
+     200028,
+     5574
+    ],
+    "got": [
+     200028
+    ],
+    "reference_pieces": [
+     "<|tag|>",
+     "ï»¿"
+    ],
+    "got_pieces": [
+     "<|tag|>"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "The <|tag|>\n﻿",
+    "hits": 3
+   },
+   {
+    "model": "phi4-mini",
+    "runtime": "transformers.js",
+    "label": "special-token+unusual-whitespace",
+    "text": "<|assistant|>﻿",
+    "reference": [
+     200019,
+     5574
+    ],
+    "got": [
+     200019
+    ],
+    "reference_pieces": [
+     "<|assistant|>",
+     "ï»¿"
+    ],
+    "got_pieces": [
+     "<|assistant|>"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "é<|assistant|>  ﻿ <b>",
+    "hits": 2
+   },
+   {
+    "model": "phi4-mini",
+    "runtime": "transformers.js",
+    "label": "special-token+unusual-whitespace",
+    "text": "<|user|>﻿",
+    "reference": [
+     200021,
+     5574
+    ],
+    "got": [
+     200021
+    ],
+    "reference_pieces": [
+     "<|user|>",
+     "ï»¿"
+    ],
+    "got_pieces": [
+     "<|user|>"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "                 ２０２６\nworld\n<|user|>\n﻿‏",
+    "hits": 2
+   }
+  ]
+ },
+ {
+  "model": "deepseek-r1",
+  "runtime": "llama.cpp",
+  "cases": 3000,
+  "mismatching_cases": 210,
+  "rate": 0.07,
+  "distinct": 4,
+  "seconds": 0.5,
+  "findings": [
+   {
+    "model": "deepseek-r1",
+    "runtime": "llama.cpp",
+    "label": "not-NFC+combining-mark",
+    "text": "Å",
+    "reference": [
+     144044
+    ],
+    "got": [
+     32,
+     136,
+     232
+    ],
+    "reference_pieces": [
+     "Ãħ"
+    ],
+    "got_pieces": [
+     "A",
+     "Ì",
+     "Ĭ"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "<|vision_start|>Å",
+    "hits": 63
+   },
+   {
+    "model": "deepseek-r1",
+    "runtime": "llama.cpp",
+    "label": "not-NFC+combining-mark",
+    "text": "é",
+    "reference": [
+     963
+    ],
+    "got": [
+     68,
+     53839
+    ],
+    "reference_pieces": [
+     "Ã©"
+    ],
+    "got_pieces": [
+     "e",
+     "Ìģ"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "é  ====\n \n     مرحباHello",
+    "hits": 60
+   },
+   {
+    "model": "deepseek-r1",
+    "runtime": "llama.cpp",
+    "label": "other",
+    "text": "</s>",
+    "reference": [
+     522,
+     82,
+     29
+    ],
+    "got": [
+     128247
+    ],
+    "reference_pieces": [
+     "</",
+     "s",
+     ">"
+    ],
+    "got_pieces": [
+     "</s>"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "'LL</s>",
+    "hits": 47
+   },
+   {
+    "model": "deepseek-r1",
+    "runtime": "llama.cpp",
+    "label": "not-NFC+combining-mark",
+    "text": "ñ",
+    "reference": [
+     5653
+    ],
+    "got": [
+     77,
+     136,
+     225
+    ],
+    "reference_pieces": [
+     "Ã±"
+    ],
+    "got_pieces": [
+     "n",
+     "Ì",
+     "ĥ"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "3.14159\t<|quad_start|>1,000,000ñ\nZ",
+    "hits": 40
+   }
+  ]
+ },
+ {
+  "model": "deepseek-r1",
+  "runtime": "transformers.js",
+  "cases": 3000,
+  "mismatching_cases": 0,
+  "rate": 0.0,
+  "distinct": 0,
+  "seconds": 0.6,
+  "findings": []
+ },
+ {
+  "model": "gpt-oss",
+  "runtime": "llama.cpp",
+  "cases": 3000,
+  "mismatching_cases": 114,
+  "rate": 0.038,
+  "distinct": 6,
+  "seconds": 1.4,
+  "findings": [
+   {
+    "model": "gpt-oss",
+    "runtime": "llama.cpp",
+    "label": "other",
+    "text": "மிழ",
+    "reference": [
+     39466
+    ],
+    "got": [
+     7599,
+     26092
+    ],
+    "reference_pieces": [
+     "à®®à®¿à®´"
+    ],
+    "got_pieces": [
+     "à®®",
+     "à®¿à®´"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "123 'LL தமிழ் ñ",
+    "hits": 48
+   },
+   {
+    "model": "gpt-oss",
+    "runtime": "llama.cpp",
+    "label": "other",
+    "text": "दी",
+    "reference": [
+     25589
+    ],
+    "got": [
+     2587,
+     840
+    ],
+    "reference_pieces": [
+     "à¤¦à¥Ģ"
+    ],
+    "got_pieces": [
+     "à¤¦",
+     "à¥Ģ"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "<|endoftext|>हिन्दी\n<b>\t한국어",
+    "hits": 38
+   },
+   {
+    "model": "gpt-oss",
+    "runtime": "llama.cpp",
+    "label": "combining-mark",
+    "text": "ம்",
+    "reference": [
+     8814
+    ],
+    "got": [
+     7599,
+     902
+    ],
+    "reference_pieces": [
+     "à®®à¯į"
+    ],
+    "got_pieces": [
+     "à®®",
+     "à¯į"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa தமிழ்  1234567\nÅ-42١٢٣",
+    "hits": 15
+   },
+   {
+    "model": "gpt-oss",
+    "runtime": "llama.cpp",
+    "label": "combining-mark",
+    "text": "न्",
+    "reference": [
+     20559
+    ],
+    "got": [
+     998,
+     682
+    ],
+    "reference_pieces": [
+     "à¤¨à¥į"
+    ],
+    "got_pieces": [
+     "à¤¨",
+     "à¥į"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "हिन्दी  ::",
+    "hits": 10
+   },
+   {
+    "model": "gpt-oss",
+    "runtime": "llama.cpp",
+    "label": "combining-mark",
+    "text": "்'s",
+    "reference": [
+     902,
+     885
+    ],
+    "got": [
+     902,
+     6,
+     82
+    ],
+    "reference_pieces": [
+     "à¯į",
+     "'s"
+    ],
+    "got_pieces": [
+     "à¯į",
+     "'",
+     "s"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "'s\nµ----------------------------------------------------------------\tதமிழ்'s",
+    "hits": 2
+   },
+   {
+    "model": "gpt-oss",
+    "runtime": "llama.cpp",
+    "label": "other",
+    "text": "️<s",
+    "reference": [
+     15148,
+     101950
+    ],
+    "got": [
+     15148,
+     27,
+     82
+    ],
+    "reference_pieces": [
+     "ï¸ı",
+     "<s"
+    ],
+    "got_pieces": [
+     "ï¸ı",
+     "<",
+     "s"
+    ],
+    "sentencepiece": null,
+    "verdict": "runtime bug",
+    "original": "❤️<s>",
+    "hits": 1
+   }
+  ]
+ },
+ {
+  "model": "gpt-oss",
+  "runtime": "transformers.js",
+  "cases": 3000,
+  "mismatching_cases": 0,
+  "rate": 0.0,
+  "distinct": 0,
+  "seconds": 1.4,
+  "findings": []
+ },
+ {
+  "model": "smollm3",
+  "runtime": "llama.cpp",
+  "cases": 3000,
+  "mismatching_cases": 0,
+  "rate": 0.0,
+  "distinct": 0,
+  "seconds": 0.7,
+  "findings": []
+ },
+ {
+  "model": "smollm3",
+  "runtime": "transformers.js",
+  "cases": 3000,
+  "mismatching_cases": 0,
+  "rate": 0.0,
+  "distinct": 0,
+  "seconds": 0.9,
+  "findings": []
+ }
+]

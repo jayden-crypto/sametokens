@@ -1,0 +1,1298 @@
+[
+ {
+  "model": "qwen2.5",
+  "conversation": "single user turn",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nHi there!<|im_end|>\n<|im_start|>assistant\n",
+  "transformers_js": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nHi there!<|im_end|>\n<|im_start|>assistant\n"
+ },
+ {
+  "model": "qwen2.5",
+  "conversation": "single user turn",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nHi there!<|im_end|>\n",
+  "transformers_js": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nHi there!<|im_end|>\n"
+ },
+ {
+  "model": "qwen2.5",
+  "conversation": "with system",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<|im_start|>system\nYou are terse.<|im_end|>\n<|im_start|>user\nHi<|im_end|>\n<|im_start|>assistant\n",
+  "transformers_js": "<|im_start|>system\nYou are terse.<|im_end|>\n<|im_start|>user\nHi<|im_end|>\n<|im_start|>assistant\n"
+ },
+ {
+  "model": "qwen2.5",
+  "conversation": "with system",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<|im_start|>system\nYou are terse.<|im_end|>\n<|im_start|>user\nHi<|im_end|>\n",
+  "transformers_js": "<|im_start|>system\nYou are terse.<|im_end|>\n<|im_start|>user\nHi<|im_end|>\n"
+ },
+ {
+  "model": "qwen2.5",
+  "conversation": "multi-turn",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\n2+2?<|im_end|>\n<|im_start|>assistant\n4<|im_end|>\n<|im_start|>user\nand 3+3?<|im_end|>\n<|im_start|>assistant\n",
+  "transformers_js": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\n2+2?<|im_end|>\n<|im_start|>assistant\n4<|im_end|>\n<|im_start|>user\nand 3+3?<|im_end|>\n<|im_start|>assistant\n"
+ },
+ {
+  "model": "qwen2.5",
+  "conversation": "multi-turn",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\n2+2?<|im_end|>\n<|im_start|>assistant\n4<|im_end|>\n<|im_start|>user\nand 3+3?<|im_end|>\n",
+  "transformers_js": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\n2+2?<|im_end|>\n<|im_start|>assistant\n4<|im_end|>\n<|im_start|>user\nand 3+3?<|im_end|>\n"
+ },
+ {
+  "model": "qwen2.5",
+  "conversation": "leading/trailing whitespace",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\n\n\n  padded  \n<|im_end|>\n<|im_start|>assistant\n",
+  "transformers_js": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\n\n\n  padded  \n<|im_end|>\n<|im_start|>assistant\n"
+ },
+ {
+  "model": "qwen2.5",
+  "conversation": "leading/trailing whitespace",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\n\n\n  padded  \n<|im_end|>\n",
+  "transformers_js": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\n\n\n  padded  \n<|im_end|>\n"
+ },
+ {
+  "model": "qwen2.5",
+  "conversation": "empty content",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\n<|im_end|>\n<|im_start|>assistant\n",
+  "transformers_js": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\n<|im_end|>\n<|im_start|>assistant\n"
+ },
+ {
+  "model": "qwen2.5",
+  "conversation": "empty content",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\n<|im_end|>\n",
+  "transformers_js": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\n<|im_end|>\n"
+ },
+ {
+  "model": "qwen2.5",
+  "conversation": "unicode",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nनमस्ते 😀 café́<|im_end|>\n<|im_start|>assistant\n",
+  "transformers_js": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nनमस्ते 😀 café́<|im_end|>\n<|im_start|>assistant\n"
+ },
+ {
+  "model": "qwen2.5",
+  "conversation": "unicode",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nनमस्ते 😀 café́<|im_end|>\n",
+  "transformers_js": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nनमस्ते 😀 café́<|im_end|>\n"
+ },
+ {
+  "model": "qwen2.5",
+  "conversation": "template-looking text",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\n{{ messages }} {% if x %}<|im_end|><|im_end|>\n<|im_start|>assistant\n",
+  "transformers_js": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\n{{ messages }} {% if x %}<|im_end|><|im_end|>\n<|im_start|>assistant\n"
+ },
+ {
+  "model": "qwen2.5",
+  "conversation": "template-looking text",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\n{{ messages }} {% if x %}<|im_end|><|im_end|>\n",
+  "transformers_js": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\n{{ messages }} {% if x %}<|im_end|><|im_end|>\n"
+ },
+ {
+  "model": "qwen2.5",
+  "conversation": "assistant last (prefill)",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a haiku<|im_end|>\n<|im_start|>assistant\nAutumn<|im_end|>\n<|im_start|>assistant\n",
+  "transformers_js": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a haiku<|im_end|>\n<|im_start|>assistant\nAutumn<|im_end|>\n<|im_start|>assistant\n"
+ },
+ {
+  "model": "qwen2.5",
+  "conversation": "assistant last (prefill)",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a haiku<|im_end|>\n<|im_start|>assistant\nAutumn<|im_end|>\n",
+  "transformers_js": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a haiku<|im_end|>\n<|im_start|>assistant\nAutumn<|im_end|>\n"
+ },
+ {
+  "model": "qwen3",
+  "conversation": "single user turn",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<|im_start|>user\nHi there!<|im_end|>\n<|im_start|>assistant\n",
+  "transformers_js": "<|im_start|>user\nHi there!<|im_end|>\n<|im_start|>assistant\n"
+ },
+ {
+  "model": "qwen3",
+  "conversation": "single user turn",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<|im_start|>user\nHi there!<|im_end|>\n",
+  "transformers_js": "<|im_start|>user\nHi there!<|im_end|>\n"
+ },
+ {
+  "model": "qwen3",
+  "conversation": "with system",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<|im_start|>system\nYou are terse.<|im_end|>\n<|im_start|>user\nHi<|im_end|>\n<|im_start|>assistant\n",
+  "transformers_js": "<|im_start|>system\nYou are terse.<|im_end|>\n<|im_start|>user\nHi<|im_end|>\n<|im_start|>assistant\n"
+ },
+ {
+  "model": "qwen3",
+  "conversation": "with system",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<|im_start|>system\nYou are terse.<|im_end|>\n<|im_start|>user\nHi<|im_end|>\n",
+  "transformers_js": "<|im_start|>system\nYou are terse.<|im_end|>\n<|im_start|>user\nHi<|im_end|>\n"
+ },
+ {
+  "model": "qwen3",
+  "conversation": "multi-turn",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<|im_start|>user\n2+2?<|im_end|>\n<|im_start|>assistant\n4<|im_end|>\n<|im_start|>user\nand 3+3?<|im_end|>\n<|im_start|>assistant\n",
+  "transformers_js": "<|im_start|>user\n2+2?<|im_end|>\n<|im_start|>assistant\n4<|im_end|>\n<|im_start|>user\nand 3+3?<|im_end|>\n<|im_start|>assistant\n"
+ },
+ {
+  "model": "qwen3",
+  "conversation": "multi-turn",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<|im_start|>user\n2+2?<|im_end|>\n<|im_start|>assistant\n4<|im_end|>\n<|im_start|>user\nand 3+3?<|im_end|>\n",
+  "transformers_js": "<|im_start|>user\n2+2?<|im_end|>\n<|im_start|>assistant\n4<|im_end|>\n<|im_start|>user\nand 3+3?<|im_end|>\n"
+ },
+ {
+  "model": "qwen3",
+  "conversation": "leading/trailing whitespace",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<|im_start|>user\n\n\n  padded  \n<|im_end|>\n<|im_start|>assistant\n",
+  "transformers_js": "<|im_start|>user\n\n\n  padded  \n<|im_end|>\n<|im_start|>assistant\n"
+ },
+ {
+  "model": "qwen3",
+  "conversation": "leading/trailing whitespace",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<|im_start|>user\n\n\n  padded  \n<|im_end|>\n",
+  "transformers_js": "<|im_start|>user\n\n\n  padded  \n<|im_end|>\n"
+ },
+ {
+  "model": "qwen3",
+  "conversation": "empty content",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<|im_start|>user\n<|im_end|>\n<|im_start|>assistant\n",
+  "transformers_js": "<|im_start|>user\n<|im_end|>\n<|im_start|>assistant\n"
+ },
+ {
+  "model": "qwen3",
+  "conversation": "empty content",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<|im_start|>user\n<|im_end|>\n",
+  "transformers_js": "<|im_start|>user\n<|im_end|>\n"
+ },
+ {
+  "model": "qwen3",
+  "conversation": "unicode",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<|im_start|>user\nनमस्ते 😀 café́<|im_end|>\n<|im_start|>assistant\n",
+  "transformers_js": "<|im_start|>user\nनमस्ते 😀 café́<|im_end|>\n<|im_start|>assistant\n"
+ },
+ {
+  "model": "qwen3",
+  "conversation": "unicode",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<|im_start|>user\nनमस्ते 😀 café́<|im_end|>\n",
+  "transformers_js": "<|im_start|>user\nनमस्ते 😀 café́<|im_end|>\n"
+ },
+ {
+  "model": "qwen3",
+  "conversation": "template-looking text",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<|im_start|>user\n{{ messages }} {% if x %}<|im_end|><|im_end|>\n<|im_start|>assistant\n",
+  "transformers_js": "<|im_start|>user\n{{ messages }} {% if x %}<|im_end|><|im_end|>\n<|im_start|>assistant\n"
+ },
+ {
+  "model": "qwen3",
+  "conversation": "template-looking text",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<|im_start|>user\n{{ messages }} {% if x %}<|im_end|><|im_end|>\n",
+  "transformers_js": "<|im_start|>user\n{{ messages }} {% if x %}<|im_end|><|im_end|>\n"
+ },
+ {
+  "model": "qwen3",
+  "conversation": "assistant last (prefill)",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<|im_start|>user\nWrite a haiku<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nAutumn<|im_end|>\n<|im_start|>assistant\n",
+  "transformers_js": "<|im_start|>user\nWrite a haiku<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nAutumn<|im_end|>\n<|im_start|>assistant\n"
+ },
+ {
+  "model": "qwen3",
+  "conversation": "assistant last (prefill)",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<|im_start|>user\nWrite a haiku<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nAutumn<|im_end|>\n",
+  "transformers_js": "<|im_start|>user\nWrite a haiku<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nAutumn<|im_end|>\n"
+ },
+ {
+  "model": "llama3.2",
+  "conversation": "single user turn",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 02 Oct 2026\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nHi there!<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+  "transformers_js": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 02 Oct 2026\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nHi there!<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+ },
+ {
+  "model": "llama3.2",
+  "conversation": "single user turn",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 02 Oct 2026\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nHi there!<|eot_id|>",
+  "transformers_js": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 02 Oct 2026\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nHi there!<|eot_id|>"
+ },
+ {
+  "model": "llama3.2",
+  "conversation": "with system",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 02 Oct 2026\n\nYou are terse.<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nHi<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+  "transformers_js": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 02 Oct 2026\n\nYou are terse.<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nHi<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+ },
+ {
+  "model": "llama3.2",
+  "conversation": "with system",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 02 Oct 2026\n\nYou are terse.<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nHi<|eot_id|>",
+  "transformers_js": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 02 Oct 2026\n\nYou are terse.<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nHi<|eot_id|>"
+ },
+ {
+  "model": "llama3.2",
+  "conversation": "multi-turn",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 02 Oct 2026\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\n2+2?<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n4<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nand 3+3?<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+  "transformers_js": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 02 Oct 2026\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\n2+2?<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n4<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nand 3+3?<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+ },
+ {
+  "model": "llama3.2",
+  "conversation": "multi-turn",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 02 Oct 2026\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\n2+2?<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n4<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nand 3+3?<|eot_id|>",
+  "transformers_js": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 02 Oct 2026\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\n2+2?<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n4<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nand 3+3?<|eot_id|>"
+ },
+ {
+  "model": "llama3.2",
+  "conversation": "leading/trailing whitespace",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 02 Oct 2026\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\npadded<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+  "transformers_js": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 02 Oct 2026\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\npadded<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+ },
+ {
+  "model": "llama3.2",
+  "conversation": "leading/trailing whitespace",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 02 Oct 2026\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\npadded<|eot_id|>",
+  "transformers_js": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 02 Oct 2026\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\npadded<|eot_id|>"
+ },
+ {
+  "model": "llama3.2",
+  "conversation": "empty content",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 02 Oct 2026\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\n<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+  "transformers_js": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 02 Oct 2026\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\n<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+ },
+ {
+  "model": "llama3.2",
+  "conversation": "empty content",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 02 Oct 2026\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\n<|eot_id|>",
+  "transformers_js": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 02 Oct 2026\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\n<|eot_id|>"
+ },
+ {
+  "model": "llama3.2",
+  "conversation": "unicode",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 02 Oct 2026\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nनमस्ते 😀 café́<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+  "transformers_js": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 02 Oct 2026\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nनमस्ते 😀 café́<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+ },
+ {
+  "model": "llama3.2",
+  "conversation": "unicode",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 02 Oct 2026\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nनमस्ते 😀 café́<|eot_id|>",
+  "transformers_js": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 02 Oct 2026\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nनमस्ते 😀 café́<|eot_id|>"
+ },
+ {
+  "model": "llama3.2",
+  "conversation": "template-looking text",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 02 Oct 2026\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\n{{ messages }} {% if x %}<|im_end|><|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+  "transformers_js": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 02 Oct 2026\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\n{{ messages }} {% if x %}<|im_end|><|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+ },
+ {
+  "model": "llama3.2",
+  "conversation": "template-looking text",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 02 Oct 2026\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\n{{ messages }} {% if x %}<|im_end|><|eot_id|>",
+  "transformers_js": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 02 Oct 2026\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\n{{ messages }} {% if x %}<|im_end|><|eot_id|>"
+ },
+ {
+  "model": "llama3.2",
+  "conversation": "assistant last (prefill)",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 02 Oct 2026\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nWrite a haiku<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\nAutumn<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+  "transformers_js": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 02 Oct 2026\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nWrite a haiku<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\nAutumn<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+ },
+ {
+  "model": "llama3.2",
+  "conversation": "assistant last (prefill)",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 02 Oct 2026\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nWrite a haiku<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\nAutumn<|eot_id|>",
+  "transformers_js": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 02 Oct 2026\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nWrite a haiku<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\nAutumn<|eot_id|>"
+ },
+ {
+  "model": "gemma3",
+  "conversation": "single user turn",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<bos><start_of_turn>user\nHi there!<end_of_turn>\n<start_of_turn>model\n",
+  "transformers_js": "<bos><start_of_turn>user\nHi there!<end_of_turn>\n<start_of_turn>model\n"
+ },
+ {
+  "model": "gemma3",
+  "conversation": "single user turn",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<bos><start_of_turn>user\nHi there!<end_of_turn>\n",
+  "transformers_js": "<bos><start_of_turn>user\nHi there!<end_of_turn>\n"
+ },
+ {
+  "model": "gemma3",
+  "conversation": "with system",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<bos><start_of_turn>user\nYou are terse.\n\nHi<end_of_turn>\n<start_of_turn>model\n",
+  "transformers_js": "<bos><start_of_turn>user\nYou are terse.\n\nHi<end_of_turn>\n<start_of_turn>model\n"
+ },
+ {
+  "model": "gemma3",
+  "conversation": "with system",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<bos><start_of_turn>user\nYou are terse.\n\nHi<end_of_turn>\n",
+  "transformers_js": "<bos><start_of_turn>user\nYou are terse.\n\nHi<end_of_turn>\n"
+ },
+ {
+  "model": "gemma3",
+  "conversation": "multi-turn",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<bos><start_of_turn>user\n2+2?<end_of_turn>\n<start_of_turn>model\n4<end_of_turn>\n<start_of_turn>user\nand 3+3?<end_of_turn>\n<start_of_turn>model\n",
+  "transformers_js": "<bos><start_of_turn>user\n2+2?<end_of_turn>\n<start_of_turn>model\n4<end_of_turn>\n<start_of_turn>user\nand 3+3?<end_of_turn>\n<start_of_turn>model\n"
+ },
+ {
+  "model": "gemma3",
+  "conversation": "multi-turn",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<bos><start_of_turn>user\n2+2?<end_of_turn>\n<start_of_turn>model\n4<end_of_turn>\n<start_of_turn>user\nand 3+3?<end_of_turn>\n",
+  "transformers_js": "<bos><start_of_turn>user\n2+2?<end_of_turn>\n<start_of_turn>model\n4<end_of_turn>\n<start_of_turn>user\nand 3+3?<end_of_turn>\n"
+ },
+ {
+  "model": "gemma3",
+  "conversation": "leading/trailing whitespace",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<bos><start_of_turn>user\npadded<end_of_turn>\n<start_of_turn>model\n",
+  "transformers_js": "<bos><start_of_turn>user\npadded<end_of_turn>\n<start_of_turn>model\n"
+ },
+ {
+  "model": "gemma3",
+  "conversation": "leading/trailing whitespace",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<bos><start_of_turn>user\npadded<end_of_turn>\n",
+  "transformers_js": "<bos><start_of_turn>user\npadded<end_of_turn>\n"
+ },
+ {
+  "model": "gemma3",
+  "conversation": "empty content",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<bos><start_of_turn>user\n<end_of_turn>\n<start_of_turn>model\n",
+  "transformers_js": "<bos><start_of_turn>user\n<end_of_turn>\n<start_of_turn>model\n"
+ },
+ {
+  "model": "gemma3",
+  "conversation": "empty content",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<bos><start_of_turn>user\n<end_of_turn>\n",
+  "transformers_js": "<bos><start_of_turn>user\n<end_of_turn>\n"
+ },
+ {
+  "model": "gemma3",
+  "conversation": "unicode",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<bos><start_of_turn>user\nनमस्ते 😀 café́<end_of_turn>\n<start_of_turn>model\n",
+  "transformers_js": "<bos><start_of_turn>user\nनमस्ते 😀 café́<end_of_turn>\n<start_of_turn>model\n"
+ },
+ {
+  "model": "gemma3",
+  "conversation": "unicode",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<bos><start_of_turn>user\nनमस्ते 😀 café́<end_of_turn>\n",
+  "transformers_js": "<bos><start_of_turn>user\nनमस्ते 😀 café́<end_of_turn>\n"
+ },
+ {
+  "model": "gemma3",
+  "conversation": "template-looking text",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<bos><start_of_turn>user\n{{ messages }} {% if x %}<|im_end|><end_of_turn>\n<start_of_turn>model\n",
+  "transformers_js": "<bos><start_of_turn>user\n{{ messages }} {% if x %}<|im_end|><end_of_turn>\n<start_of_turn>model\n"
+ },
+ {
+  "model": "gemma3",
+  "conversation": "template-looking text",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<bos><start_of_turn>user\n{{ messages }} {% if x %}<|im_end|><end_of_turn>\n",
+  "transformers_js": "<bos><start_of_turn>user\n{{ messages }} {% if x %}<|im_end|><end_of_turn>\n"
+ },
+ {
+  "model": "gemma3",
+  "conversation": "assistant last (prefill)",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<bos><start_of_turn>user\nWrite a haiku<end_of_turn>\n<start_of_turn>model\nAutumn<end_of_turn>\n<start_of_turn>model\n",
+  "transformers_js": "<bos><start_of_turn>user\nWrite a haiku<end_of_turn>\n<start_of_turn>model\nAutumn<end_of_turn>\n<start_of_turn>model\n"
+ },
+ {
+  "model": "gemma3",
+  "conversation": "assistant last (prefill)",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<bos><start_of_turn>user\nWrite a haiku<end_of_turn>\n<start_of_turn>model\nAutumn<end_of_turn>\n",
+  "transformers_js": "<bos><start_of_turn>user\nWrite a haiku<end_of_turn>\n<start_of_turn>model\nAutumn<end_of_turn>\n"
+ },
+ {
+  "model": "mistral-v0.3",
+  "conversation": "single user turn",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<s>[INST] Hi there![/INST]",
+  "transformers_js": "<s>[INST] Hi there![/INST]"
+ },
+ {
+  "model": "mistral-v0.3",
+  "conversation": "single user turn",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<s>[INST] Hi there![/INST]",
+  "transformers_js": "<s>[INST] Hi there![/INST]"
+ },
+ {
+  "model": "mistral-v0.3",
+  "conversation": "with system",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<s>[INST] You are terse.\n\nHi[/INST]",
+  "transformers_js": "<s>[INST] You are terse.\n\nHi[/INST]"
+ },
+ {
+  "model": "mistral-v0.3",
+  "conversation": "with system",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<s>[INST] You are terse.\n\nHi[/INST]",
+  "transformers_js": "<s>[INST] You are terse.\n\nHi[/INST]"
+ },
+ {
+  "model": "mistral-v0.3",
+  "conversation": "multi-turn",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<s>[INST] 2+2?[/INST] 4</s>[INST] and 3+3?[/INST]",
+  "transformers_js": "<s>[INST] 2+2?[/INST] 4</s>[INST] and 3+3?[/INST]"
+ },
+ {
+  "model": "mistral-v0.3",
+  "conversation": "multi-turn",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<s>[INST] 2+2?[/INST] 4</s>[INST] and 3+3?[/INST]",
+  "transformers_js": "<s>[INST] 2+2?[/INST] 4</s>[INST] and 3+3?[/INST]"
+ },
+ {
+  "model": "mistral-v0.3",
+  "conversation": "leading/trailing whitespace",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<s>[INST] \n\n  padded  \n[/INST]",
+  "transformers_js": "<s>[INST] \n\n  padded  \n[/INST]"
+ },
+ {
+  "model": "mistral-v0.3",
+  "conversation": "leading/trailing whitespace",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<s>[INST] \n\n  padded  \n[/INST]",
+  "transformers_js": "<s>[INST] \n\n  padded  \n[/INST]"
+ },
+ {
+  "model": "mistral-v0.3",
+  "conversation": "empty content",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<s>[INST] [/INST]",
+  "transformers_js": "<s>[INST] [/INST]"
+ },
+ {
+  "model": "mistral-v0.3",
+  "conversation": "empty content",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<s>[INST] [/INST]",
+  "transformers_js": "<s>[INST] [/INST]"
+ },
+ {
+  "model": "mistral-v0.3",
+  "conversation": "unicode",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<s>[INST] नमस्ते 😀 café́[/INST]",
+  "transformers_js": "<s>[INST] नमस्ते 😀 café́[/INST]"
+ },
+ {
+  "model": "mistral-v0.3",
+  "conversation": "unicode",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<s>[INST] नमस्ते 😀 café́[/INST]",
+  "transformers_js": "<s>[INST] नमस्ते 😀 café́[/INST]"
+ },
+ {
+  "model": "mistral-v0.3",
+  "conversation": "template-looking text",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<s>[INST] {{ messages }} {% if x %}<|im_end|>[/INST]",
+  "transformers_js": "<s>[INST] {{ messages }} {% if x %}<|im_end|>[/INST]"
+ },
+ {
+  "model": "mistral-v0.3",
+  "conversation": "template-looking text",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<s>[INST] {{ messages }} {% if x %}<|im_end|>[/INST]",
+  "transformers_js": "<s>[INST] {{ messages }} {% if x %}<|im_end|>[/INST]"
+ },
+ {
+  "model": "mistral-v0.3",
+  "conversation": "assistant last (prefill)",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<s>[INST] Write a haiku[/INST] Autumn</s>",
+  "transformers_js": "<s>[INST] Write a haiku[/INST] Autumn</s>"
+ },
+ {
+  "model": "mistral-v0.3",
+  "conversation": "assistant last (prefill)",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<s>[INST] Write a haiku[/INST] Autumn</s>",
+  "transformers_js": "<s>[INST] Write a haiku[/INST] Autumn</s>"
+ },
+ {
+  "model": "phi4-mini",
+  "conversation": "single user turn",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<|user|>Hi there!<|end|><|assistant|>",
+  "transformers_js": "<|user|>Hi there!<|end|><|assistant|>"
+ },
+ {
+  "model": "phi4-mini",
+  "conversation": "single user turn",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<|user|>Hi there!<|end|><|endoftext|>",
+  "transformers_js": "<|user|>Hi there!<|end|><|endoftext|>"
+ },
+ {
+  "model": "phi4-mini",
+  "conversation": "with system",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<|system|>You are terse.<|end|><|user|>Hi<|end|><|assistant|>",
+  "transformers_js": "<|system|>You are terse.<|end|><|user|>Hi<|end|><|assistant|>"
+ },
+ {
+  "model": "phi4-mini",
+  "conversation": "with system",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<|system|>You are terse.<|end|><|user|>Hi<|end|><|endoftext|>",
+  "transformers_js": "<|system|>You are terse.<|end|><|user|>Hi<|end|><|endoftext|>"
+ },
+ {
+  "model": "phi4-mini",
+  "conversation": "multi-turn",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<|user|>2+2?<|end|><|assistant|>4<|end|><|user|>and 3+3?<|end|><|assistant|>",
+  "transformers_js": "<|user|>2+2?<|end|><|assistant|>4<|end|><|user|>and 3+3?<|end|><|assistant|>"
+ },
+ {
+  "model": "phi4-mini",
+  "conversation": "multi-turn",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<|user|>2+2?<|end|><|assistant|>4<|end|><|user|>and 3+3?<|end|><|endoftext|>",
+  "transformers_js": "<|user|>2+2?<|end|><|assistant|>4<|end|><|user|>and 3+3?<|end|><|endoftext|>"
+ },
+ {
+  "model": "phi4-mini",
+  "conversation": "leading/trailing whitespace",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<|user|>\n\n  padded  \n<|end|><|assistant|>",
+  "transformers_js": "<|user|>\n\n  padded  \n<|end|><|assistant|>"
+ },
+ {
+  "model": "phi4-mini",
+  "conversation": "leading/trailing whitespace",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<|user|>\n\n  padded  \n<|end|><|endoftext|>",
+  "transformers_js": "<|user|>\n\n  padded  \n<|end|><|endoftext|>"
+ },
+ {
+  "model": "phi4-mini",
+  "conversation": "empty content",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<|user|><|end|><|assistant|>",
+  "transformers_js": "<|user|><|end|><|assistant|>"
+ },
+ {
+  "model": "phi4-mini",
+  "conversation": "empty content",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<|user|><|end|><|endoftext|>",
+  "transformers_js": "<|user|><|end|><|endoftext|>"
+ },
+ {
+  "model": "phi4-mini",
+  "conversation": "unicode",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<|user|>नमस्ते 😀 café́<|end|><|assistant|>",
+  "transformers_js": "<|user|>नमस्ते 😀 café́<|end|><|assistant|>"
+ },
+ {
+  "model": "phi4-mini",
+  "conversation": "unicode",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<|user|>नमस्ते 😀 café́<|end|><|endoftext|>",
+  "transformers_js": "<|user|>नमस्ते 😀 café́<|end|><|endoftext|>"
+ },
+ {
+  "model": "phi4-mini",
+  "conversation": "template-looking text",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<|user|>{{ messages }} {% if x %}<|im_end|><|end|><|assistant|>",
+  "transformers_js": "<|user|>{{ messages }} {% if x %}<|im_end|><|end|><|assistant|>"
+ },
+ {
+  "model": "phi4-mini",
+  "conversation": "template-looking text",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<|user|>{{ messages }} {% if x %}<|im_end|><|end|><|endoftext|>",
+  "transformers_js": "<|user|>{{ messages }} {% if x %}<|im_end|><|end|><|endoftext|>"
+ },
+ {
+  "model": "phi4-mini",
+  "conversation": "assistant last (prefill)",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<|user|>Write a haiku<|end|><|assistant|>Autumn<|end|><|assistant|>",
+  "transformers_js": "<|user|>Write a haiku<|end|><|assistant|>Autumn<|end|><|assistant|>"
+ },
+ {
+  "model": "phi4-mini",
+  "conversation": "assistant last (prefill)",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<|user|>Write a haiku<|end|><|assistant|>Autumn<|end|><|endoftext|>",
+  "transformers_js": "<|user|>Write a haiku<|end|><|assistant|>Autumn<|end|><|endoftext|>"
+ },
+ {
+  "model": "deepseek-r1",
+  "conversation": "single user turn",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<｜begin▁of▁sentence｜><｜User｜>Hi there!<｜Assistant｜><think>\n",
+  "transformers_js": "<｜begin▁of▁sentence｜><｜User｜>Hi there!<｜Assistant｜><think>\n"
+ },
+ {
+  "model": "deepseek-r1",
+  "conversation": "single user turn",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<｜begin▁of▁sentence｜><｜User｜>Hi there!",
+  "transformers_js": "<｜begin▁of▁sentence｜><｜User｜>Hi there!"
+ },
+ {
+  "model": "deepseek-r1",
+  "conversation": "with system",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<｜begin▁of▁sentence｜>You are terse.<｜User｜>Hi<｜Assistant｜><think>\n",
+  "transformers_js": "<｜begin▁of▁sentence｜>You are terse.<｜User｜>Hi<｜Assistant｜><think>\n"
+ },
+ {
+  "model": "deepseek-r1",
+  "conversation": "with system",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<｜begin▁of▁sentence｜>You are terse.<｜User｜>Hi",
+  "transformers_js": "<｜begin▁of▁sentence｜>You are terse.<｜User｜>Hi"
+ },
+ {
+  "model": "deepseek-r1",
+  "conversation": "multi-turn",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<｜begin▁of▁sentence｜><｜User｜>2+2?<｜Assistant｜>4<｜end▁of▁sentence｜><｜User｜>and 3+3?<｜Assistant｜><think>\n",
+  "transformers_js": "<｜begin▁of▁sentence｜><｜User｜>2+2?<｜Assistant｜>4<｜end▁of▁sentence｜><｜User｜>and 3+3?<｜Assistant｜><think>\n"
+ },
+ {
+  "model": "deepseek-r1",
+  "conversation": "multi-turn",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<｜begin▁of▁sentence｜><｜User｜>2+2?<｜Assistant｜>4<｜end▁of▁sentence｜><｜User｜>and 3+3?",
+  "transformers_js": "<｜begin▁of▁sentence｜><｜User｜>2+2?<｜Assistant｜>4<｜end▁of▁sentence｜><｜User｜>and 3+3?"
+ },
+ {
+  "model": "deepseek-r1",
+  "conversation": "leading/trailing whitespace",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<｜begin▁of▁sentence｜><｜User｜>\n\n  padded  \n<｜Assistant｜><think>\n",
+  "transformers_js": "<｜begin▁of▁sentence｜><｜User｜>\n\n  padded  \n<｜Assistant｜><think>\n"
+ },
+ {
+  "model": "deepseek-r1",
+  "conversation": "leading/trailing whitespace",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<｜begin▁of▁sentence｜><｜User｜>\n\n  padded  \n",
+  "transformers_js": "<｜begin▁of▁sentence｜><｜User｜>\n\n  padded  \n"
+ },
+ {
+  "model": "deepseek-r1",
+  "conversation": "empty content",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<｜begin▁of▁sentence｜><｜User｜><｜Assistant｜><think>\n",
+  "transformers_js": "<｜begin▁of▁sentence｜><｜User｜><｜Assistant｜><think>\n"
+ },
+ {
+  "model": "deepseek-r1",
+  "conversation": "empty content",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<｜begin▁of▁sentence｜><｜User｜>",
+  "transformers_js": "<｜begin▁of▁sentence｜><｜User｜>"
+ },
+ {
+  "model": "deepseek-r1",
+  "conversation": "unicode",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<｜begin▁of▁sentence｜><｜User｜>नमस्ते 😀 café́<｜Assistant｜><think>\n",
+  "transformers_js": "<｜begin▁of▁sentence｜><｜User｜>नमस्ते 😀 café́<｜Assistant｜><think>\n"
+ },
+ {
+  "model": "deepseek-r1",
+  "conversation": "unicode",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<｜begin▁of▁sentence｜><｜User｜>नमस्ते 😀 café́",
+  "transformers_js": "<｜begin▁of▁sentence｜><｜User｜>नमस्ते 😀 café́"
+ },
+ {
+  "model": "deepseek-r1",
+  "conversation": "template-looking text",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<｜begin▁of▁sentence｜><｜User｜>{{ messages }} {% if x %}<|im_end|><｜Assistant｜><think>\n",
+  "transformers_js": "<｜begin▁of▁sentence｜><｜User｜>{{ messages }} {% if x %}<|im_end|><｜Assistant｜><think>\n"
+ },
+ {
+  "model": "deepseek-r1",
+  "conversation": "template-looking text",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<｜begin▁of▁sentence｜><｜User｜>{{ messages }} {% if x %}<|im_end|>",
+  "transformers_js": "<｜begin▁of▁sentence｜><｜User｜>{{ messages }} {% if x %}<|im_end|>"
+ },
+ {
+  "model": "deepseek-r1",
+  "conversation": "assistant last (prefill)",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<｜begin▁of▁sentence｜><｜User｜>Write a haiku<｜Assistant｜>Autumn<｜end▁of▁sentence｜><｜Assistant｜><think>\n",
+  "transformers_js": "<｜begin▁of▁sentence｜><｜User｜>Write a haiku<｜Assistant｜>Autumn<｜end▁of▁sentence｜><｜Assistant｜><think>\n"
+ },
+ {
+  "model": "deepseek-r1",
+  "conversation": "assistant last (prefill)",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<｜begin▁of▁sentence｜><｜User｜>Write a haiku<｜Assistant｜>Autumn<｜end▁of▁sentence｜>",
+  "transformers_js": "<｜begin▁of▁sentence｜><｜User｜>Write a haiku<｜Assistant｜>Autumn<｜end▁of▁sentence｜>"
+ },
+ {
+  "model": "gpt-oss",
+  "conversation": "single user turn",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-10-02\n\nReasoning: medium\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>user<|message|>Hi there!<|end|><|start|>assistant",
+  "transformers_js": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-10-02\n\nReasoning: medium\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>user<|message|>Hi there!<|end|><|start|>assistant"
+ },
+ {
+  "model": "gpt-oss",
+  "conversation": "single user turn",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-10-02\n\nReasoning: medium\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>user<|message|>Hi there!<|end|>",
+  "transformers_js": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-10-02\n\nReasoning: medium\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>user<|message|>Hi there!<|end|>"
+ },
+ {
+  "model": "gpt-oss",
+  "conversation": "with system",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-10-02\n\nReasoning: medium\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>developer<|message|># Instructions\n\nYou are terse.\n\n<|end|><|start|>user<|message|>Hi<|end|><|start|>assistant",
+  "transformers_js": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-10-02\n\nReasoning: medium\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>developer<|message|># Instructions\n\nYou are terse.\n\n<|end|><|start|>user<|message|>Hi<|end|><|start|>assistant"
+ },
+ {
+  "model": "gpt-oss",
+  "conversation": "with system",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-10-02\n\nReasoning: medium\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>developer<|message|># Instructions\n\nYou are terse.\n\n<|end|><|start|>user<|message|>Hi<|end|>",
+  "transformers_js": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-10-02\n\nReasoning: medium\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>developer<|message|># Instructions\n\nYou are terse.\n\n<|end|><|start|>user<|message|>Hi<|end|>"
+ },
+ {
+  "model": "gpt-oss",
+  "conversation": "multi-turn",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-10-02\n\nReasoning: medium\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>user<|message|>2+2?<|end|><|start|>assistant<|channel|>final<|message|>4<|end|><|start|>user<|message|>and 3+3?<|end|><|start|>assistant",
+  "transformers_js": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-10-02\n\nReasoning: medium\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>user<|message|>2+2?<|end|><|start|>assistant<|channel|>final<|message|>4<|end|><|start|>user<|message|>and 3+3?<|end|><|start|>assistant"
+ },
+ {
+  "model": "gpt-oss",
+  "conversation": "multi-turn",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-10-02\n\nReasoning: medium\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>user<|message|>2+2?<|end|><|start|>assistant<|channel|>final<|message|>4<|end|><|start|>user<|message|>and 3+3?<|end|>",
+  "transformers_js": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-10-02\n\nReasoning: medium\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>user<|message|>2+2?<|end|><|start|>assistant<|channel|>final<|message|>4<|end|><|start|>user<|message|>and 3+3?<|end|>"
+ },
+ {
+  "model": "gpt-oss",
+  "conversation": "leading/trailing whitespace",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-10-02\n\nReasoning: medium\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>user<|message|>\n\n  padded  \n<|end|><|start|>assistant",
+  "transformers_js": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-10-02\n\nReasoning: medium\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>user<|message|>\n\n  padded  \n<|end|><|start|>assistant"
+ },
+ {
+  "model": "gpt-oss",
+  "conversation": "leading/trailing whitespace",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-10-02\n\nReasoning: medium\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>user<|message|>\n\n  padded  \n<|end|>",
+  "transformers_js": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-10-02\n\nReasoning: medium\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>user<|message|>\n\n  padded  \n<|end|>"
+ },
+ {
+  "model": "gpt-oss",
+  "conversation": "empty content",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-10-02\n\nReasoning: medium\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>user<|message|><|end|><|start|>assistant",
+  "transformers_js": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-10-02\n\nReasoning: medium\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>user<|message|><|end|><|start|>assistant"
+ },
+ {
+  "model": "gpt-oss",
+  "conversation": "empty content",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-10-02\n\nReasoning: medium\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>user<|message|><|end|>",
+  "transformers_js": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-10-02\n\nReasoning: medium\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>user<|message|><|end|>"
+ },
+ {
+  "model": "gpt-oss",
+  "conversation": "unicode",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-10-02\n\nReasoning: medium\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>user<|message|>नमस्ते 😀 café́<|end|><|start|>assistant",
+  "transformers_js": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-10-02\n\nReasoning: medium\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>user<|message|>नमस्ते 😀 café́<|end|><|start|>assistant"
+ },
+ {
+  "model": "gpt-oss",
+  "conversation": "unicode",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-10-02\n\nReasoning: medium\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>user<|message|>नमस्ते 😀 café́<|end|>",
+  "transformers_js": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-10-02\n\nReasoning: medium\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>user<|message|>नमस्ते 😀 café́<|end|>"
+ },
+ {
+  "model": "gpt-oss",
+  "conversation": "template-looking text",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-10-02\n\nReasoning: medium\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>user<|message|>{{ messages }} {% if x %}<|im_end|><|end|><|start|>assistant",
+  "transformers_js": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-10-02\n\nReasoning: medium\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>user<|message|>{{ messages }} {% if x %}<|im_end|><|end|><|start|>assistant"
+ },
+ {
+  "model": "gpt-oss",
+  "conversation": "template-looking text",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-10-02\n\nReasoning: medium\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>user<|message|>{{ messages }} {% if x %}<|im_end|><|end|>",
+  "transformers_js": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-10-02\n\nReasoning: medium\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>user<|message|>{{ messages }} {% if x %}<|im_end|><|end|>"
+ },
+ {
+  "model": "gpt-oss",
+  "conversation": "assistant last (prefill)",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-10-02\n\nReasoning: medium\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>user<|message|>Write a haiku<|end|><|start|>assistant<|channel|>final<|message|>Autumn<|end|><|start|>assistant",
+  "transformers_js": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-10-02\n\nReasoning: medium\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>user<|message|>Write a haiku<|end|><|start|>assistant<|channel|>final<|message|>Autumn<|end|><|start|>assistant"
+ },
+ {
+  "model": "gpt-oss",
+  "conversation": "assistant last (prefill)",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-10-02\n\nReasoning: medium\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>user<|message|>Write a haiku<|end|><|start|>assistant<|channel|>final<|message|>Autumn<|return|>",
+  "transformers_js": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-10-02\n\nReasoning: medium\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>user<|message|>Write a haiku<|end|><|start|>assistant<|channel|>final<|message|>Autumn<|return|>"
+ },
+ {
+  "model": "smollm3",
+  "conversation": "single user turn",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 02 October 2026\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\nHi there!<|im_end|>\n<|im_start|>assistant\n",
+  "transformers_js": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 02 October 2026\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\nHi there!<|im_end|>\n<|im_start|>assistant\n"
+ },
+ {
+  "model": "smollm3",
+  "conversation": "single user turn",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 02 October 2026\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\nHi there!<|im_end|>\n",
+  "transformers_js": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 02 October 2026\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\nHi there!<|im_end|>\n"
+ },
+ {
+  "model": "smollm3",
+  "conversation": "with system",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 02 October 2026\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are terse.\n\n<|im_start|>user\nHi<|im_end|>\n<|im_start|>assistant\n",
+  "transformers_js": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 02 October 2026\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are terse.\n\n<|im_start|>user\nHi<|im_end|>\n<|im_start|>assistant\n"
+ },
+ {
+  "model": "smollm3",
+  "conversation": "with system",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 02 October 2026\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are terse.\n\n<|im_start|>user\nHi<|im_end|>\n",
+  "transformers_js": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 02 October 2026\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are terse.\n\n<|im_start|>user\nHi<|im_end|>\n"
+ },
+ {
+  "model": "smollm3",
+  "conversation": "multi-turn",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 02 October 2026\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\n2+2?<|im_end|>\n<|im_start|>assistant\n4<|im_end|>\n<|im_start|>user\nand 3+3?<|im_end|>\n<|im_start|>assistant\n",
+  "transformers_js": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 02 October 2026\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\n2+2?<|im_end|>\n<|im_start|>assistant\n4<|im_end|>\n<|im_start|>user\nand 3+3?<|im_end|>\n<|im_start|>assistant\n"
+ },
+ {
+  "model": "smollm3",
+  "conversation": "multi-turn",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 02 October 2026\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\n2+2?<|im_end|>\n<|im_start|>assistant\n4<|im_end|>\n<|im_start|>user\nand 3+3?<|im_end|>\n",
+  "transformers_js": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 02 October 2026\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\n2+2?<|im_end|>\n<|im_start|>assistant\n4<|im_end|>\n<|im_start|>user\nand 3+3?<|im_end|>\n"
+ },
+ {
+  "model": "smollm3",
+  "conversation": "leading/trailing whitespace",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 02 October 2026\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\n\n\n  padded  \n<|im_end|>\n<|im_start|>assistant\n",
+  "transformers_js": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 02 October 2026\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\n\n\n  padded  \n<|im_end|>\n<|im_start|>assistant\n"
+ },
+ {
+  "model": "smollm3",
+  "conversation": "leading/trailing whitespace",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 02 October 2026\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\n\n\n  padded  \n<|im_end|>\n",
+  "transformers_js": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 02 October 2026\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\n\n\n  padded  \n<|im_end|>\n"
+ },
+ {
+  "model": "smollm3",
+  "conversation": "empty content",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 02 October 2026\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\n<|im_end|>\n<|im_start|>assistant\n",
+  "transformers_js": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 02 October 2026\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\n<|im_end|>\n<|im_start|>assistant\n"
+ },
+ {
+  "model": "smollm3",
+  "conversation": "empty content",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 02 October 2026\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\n<|im_end|>\n",
+  "transformers_js": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 02 October 2026\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\n<|im_end|>\n"
+ },
+ {
+  "model": "smollm3",
+  "conversation": "unicode",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 02 October 2026\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\nनमस्ते 😀 café́<|im_end|>\n<|im_start|>assistant\n",
+  "transformers_js": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 02 October 2026\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\nनमस्ते 😀 café́<|im_end|>\n<|im_start|>assistant\n"
+ },
+ {
+  "model": "smollm3",
+  "conversation": "unicode",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 02 October 2026\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\nनमस्ते 😀 café́<|im_end|>\n",
+  "transformers_js": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 02 October 2026\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\nनमस्ते 😀 café́<|im_end|>\n"
+ },
+ {
+  "model": "smollm3",
+  "conversation": "template-looking text",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 02 October 2026\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\n{{ messages }} {% if x %}<|im_end|><|im_end|>\n<|im_start|>assistant\n",
+  "transformers_js": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 02 October 2026\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\n{{ messages }} {% if x %}<|im_end|><|im_end|>\n<|im_start|>assistant\n"
+ },
+ {
+  "model": "smollm3",
+  "conversation": "template-looking text",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 02 October 2026\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\n{{ messages }} {% if x %}<|im_end|><|im_end|>\n",
+  "transformers_js": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 02 October 2026\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\n{{ messages }} {% if x %}<|im_end|><|im_end|>\n"
+ },
+ {
+  "model": "smollm3",
+  "conversation": "assistant last (prefill)",
+  "add_generation_prompt": true,
+  "same": true,
+  "diff": "",
+  "reference": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 02 October 2026\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\nWrite a haiku<|im_end|>\n<|im_start|>assistant\nAutumn<|im_end|>\n<|im_start|>assistant\n",
+  "transformers_js": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 02 October 2026\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\nWrite a haiku<|im_end|>\n<|im_start|>assistant\nAutumn<|im_end|>\n<|im_start|>assistant\n"
+ },
+ {
+  "model": "smollm3",
+  "conversation": "assistant last (prefill)",
+  "add_generation_prompt": false,
+  "same": true,
+  "diff": "",
+  "reference": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 02 October 2026\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\nWrite a haiku<|im_end|>\n<|im_start|>assistant\nAutumn<|im_end|>\n",
+  "transformers_js": "<|im_start|>system\n## Metadata\n\nKnowledge Cutoff Date: June 2025\nToday Date: 02 October 2026\nReasoning Mode: /think\n\n## Custom Instructions\n\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face. Your role as an assistant involves thoroughly exploring questions through a systematic thinking process before providing the final precise and accurate solutions. This requires engaging in a comprehensive cycle of analysis, summarizing, exploration, reassessment, reflection, backtracking, and iteration to develop well-considered thinking process. Please structure your response into two main sections: Thought and Solution using the specified format: <think> Thought section </think> Solution section. In the Thought section, detail your reasoning process in steps. Each step should include detailed considerations such as analysing questions, summarizing relevant findings, brainstorming new ideas, verifying the accuracy of the current steps, refining any errors, and revisiting previous steps. In the Solution section, based on various attempts, explorations, and reflections from the Thought section, systematically present the final solution that you deem correct. The Solution section should be logical, accurate, and concise and detail necessary steps needed to reach the conclusion.\n\n<|im_start|>user\nWrite a haiku<|im_end|>\n<|im_start|>assistant\nAutumn<|im_end|>\n"
+ }
+]

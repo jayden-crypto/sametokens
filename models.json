@@ -1,0 +1,11 @@
+{
+  "qwen2.5":       {"repo": "Qwen/Qwen2.5-3B-Instruct"},
+  "qwen3":         {"repo": "Qwen/Qwen3-0.6B"},
+  "llama3.2":      {"repo": "unsloth/Llama-3.2-1B-Instruct"},
+  "gemma3":        {"repo": "unsloth/gemma-3-1b-it"},
+  "mistral-v0.3":  {"repo": "unsloth/mistral-7b-instruct-v0.3"},
+  "phi4-mini":     {"repo": "microsoft/Phi-4-mini-instruct"},
+  "deepseek-r1":   {"repo": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B"},
+  "gpt-oss":       {"repo": "openai/gpt-oss-20b"},
+  "smollm3":       {"repo": "HuggingFaceTB/SmolLM3-3B"}
+}

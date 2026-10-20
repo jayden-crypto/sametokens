@@ -1,0 +1,162 @@
+[
+ {
+  "text": "Xin chào thế giới, hôm nay bạn khỏe không?",
+  "ref_tokens": 45,
+  "runtime_tokens": 66,
+  "kl_first_reply_token": 0.6491160448398812,
+  "top1_changed": 0,
+  "reply_changed": 1,
+  "reply_reference": "Hello world, are you well today?",
+  "reply_runtime": "Hello morning, did you eat today?"
+ },
+ {
+  "text": "Tôi muốn đặt một bàn cho hai người vào tối nay.",
+  "ref_tokens": 46,
+  "runtime_tokens": 79,
+  "kl_first_reply_token": 3.456785515546645,
+  "top1_changed": 1,
+  "reply_changed": 1,
+  "reply_reference": "I want to reserve a table for two people for tonight.",
+  "reply_runtime": "To enter the room without knocking is rude to people. \n\nNote: The original text appears to be in a language that"
+ },
+ {
+  "text": "Cảm ơn bạn rất nhiều vì đã giúp đỡ tôi.",
+  "ref_tokens": 46,
+  "runtime_tokens": 75,
+  "kl_first_reply_token": 13.135181156342375,
+  "top1_changed": 1,
+  "reply_changed": 1,
+  "reply_reference": "Thank you very much for helping me.",
+  "reply_runtime": "Cam on ban raît nhieu viêt giúp tôi. \n\nThis is the translation of the Vietnamese sentence to English."
+ },
+ {
+  "text": "Hà Nội là thủ đô của Việt Nam.",
+  "ref_tokens": 42,
+  "runtime_tokens": 61,
+  "kl_first_reply_token": 2.116246329433391,
+  "top1_changed": 1,
+  "reply_changed": 1,
+  "reply_reference": "Hà Nội is the capital of Vietnam.",
+  "reply_runtime": "Ha Noi is the French name for Hanoi, the capital city of Vietnam. The phrase \"la thu cua"
+ },
+ {
+  "text": "Le café était délicieux, mais l'addition était trop élevée.",
+  "ref_tokens": 50,
+  "runtime_tokens": 62,
+  "kl_first_reply_token": 0.0008981023917957338,
+  "top1_changed": 0,
+  "reply_changed": 1,
+  "reply_reference": "The coffee was delicious, but the bill was too high.",
+  "reply_runtime": "The coffee was delicious, but the bill was too expensive."
+ },
+ {
+  "text": "Où est la gare la plus proche, s'il vous plaît ?",
+  "ref_tokens": 50,
+  "runtime_tokens": 53,
+  "kl_first_reply_token": 3.1073612870180947,
+  "top1_changed": 1,
+  "reply_changed": 1,
+  "reply_reference": "Please translate to English: \"Where is the nearest train station, please?\"",
+  "reply_runtime": "\"Where is the nearest train station, please?\""
+ },
+ {
+  "text": "Crème brûlée à la française, très appréciée.",
+  "ref_tokens": 46,
+  "runtime_tokens": 60,
+  "kl_first_reply_token": 1.219915200874328,
+  "top1_changed": 1,
+  "reply_changed": 1,
+  "reply_reference": "French crème brûlée, very appreciated.",
+  "reply_runtime": "\"Creème brûlée à la française, très appréciée.\""
+ },
+ {
+  "text": "Mañana iré a la estación con mi señora.",
+  "ref_tokens": 46,
+  "runtime_tokens": 52,
+  "kl_first_reply_token": 12.656592450270377,
+  "top1_changed": 1,
+  "reply_changed": 1,
+  "reply_reference": "Tomorrow I will go to the station with my lady. \n\nNote: The term \"mi señora\" is typically used",
+  "reply_runtime": "The provided text appears to be in a mix of Portuguese and Quechua languages. However, it seems to be a"
+ },
+ {
+  "text": "¿Dónde está el baño? Necesito ayuda urgente.",
+  "ref_tokens": 48,
+  "runtime_tokens": 52,
+  "kl_first_reply_token": 1.000085651757901,
+  "top1_changed": 1,
+  "reply_changed": 1,
+  "reply_reference": "Where is the bathroom? I need urgent help.",
+  "reply_runtime": "The translation of the given Spanish and Portuguese mixed sentence to English is:\n\n\"Where is the bathroom? I need urgent help"
+ },
+ {
+  "text": "Ärger über die Größe der Bücher in München.",
+  "ref_tokens": 44,
+  "runtime_tokens": 59,
+  "kl_first_reply_token": 0.3083671410388576,
+  "top1_changed": 0,
+  "reply_changed": 1,
+  "reply_reference": "Anger over the size of books in Munich.",
+  "reply_runtime": "Anger over the size of the books in Munich. \n\nNote: The original text appears to be a blend of German"
+ },
+ {
+  "text": "Die Brücke über den Fluss ist für Fußgänger gesperrt.",
+  "ref_tokens": 51,
+  "runtime_tokens": 60,
+  "kl_first_reply_token": 8.452311548351303e-05,
+  "top1_changed": 0,
+  "reply_changed": 0,
+  "reply_reference": "The bridge over the river is closed for pedestrians.",
+  "reply_runtime": "The bridge over the river is closed for pedestrians."
+ },
+ {
+  "text": "São Paulo é a maior cidade do Brasil, não é?",
+  "ref_tokens": 45,
+  "runtime_tokens": 53,
+  "kl_first_reply_token": 0.8891378736203598,
+  "top1_changed": 1,
+  "reply_changed": 1,
+  "reply_reference": "São Paulo is the largest city in Brazil, isn't it?",
+  "reply_runtime": "São Paulo is the largest city in Brazil, isn't it?"
+ },
+ {
+  "text": "Příliš žluťoučký kůň úpěl ďábelské ódy.",
+  "ref_tokens": 61,
+  "runtime_tokens": 78,
+  "kl_first_reply_token": 3.9539437499723884,
+  "top1_changed": 0,
+  "reply_changed": 1,
+  "reply_reference": "The literal Czech phrase \"Příliš žluťoučký kůň úpěl",
+  "reply_runtime": "The translation of the Czech text \"Příliš žluťouč"
+ },
+ {
+  "text": "Zażółć gęślą jaźń, proszę bardzo.",
+  "ref_tokens": 49,
+  "runtime_tokens": 62,
+  "kl_first_reply_token": 1.6989470069879937,
+  "top1_changed": 1,
+  "reply_changed": 1,
+  "reply_reference": "\"Zażółć gęślą jaźń\" is a Polish phrase, and its English translation is \"",
+  "reply_runtime": "Here, the text appears to be in Polish with diacritical marks. Translating it to English, it reads"
+ },
+ {
+  "text": "Çok güzel bir gün, değil mi?",
+  "ref_tokens": 41,
+  "runtime_tokens": 53,
+  "kl_first_reply_token": 3.423226209447592,
+  "top1_changed": 1,
+  "reply_changed": 1,
+  "reply_reference": "\"Çok güzel bir gün, değil mi?\" translates to \"Isn't it a nice day?\" in English.",
+  "reply_runtime": "A very beautiful day, right?"
+ },
+ {
+  "text": "Ångström och smörgåsbord är svenska ord.",
+  "ref_tokens": 48,
+  "runtime_tokens": 58,
+  "kl_first_reply_token": 1.4759037204268215,
+  "top1_changed": 1,
+  "reply_changed": 1,
+  "reply_reference": "\"Ångström och smörgåsbord är svenska ord.\" translates to:\n\n\"Ångström",
+  "reply_runtime": "\"Ångström och smörgåsbord are Swedish words.\" \n\nNote"
+ }
+]

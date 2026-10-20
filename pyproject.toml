@@ -1,0 +1,42 @@
+[project]
+name = "sametokens"
+version = "0.1.0"
+description = "Differential fuzzer: do LLM runtimes (llama.cpp, Ollama, transformers.js) tokenize prompts the way the model was trained?"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.12"
+dependencies = [
+    "huggingface-hub>=1.33.0",
+    "jinja2>=3.1.6",
+    "llama-cpp-python>=0.3.36",
+    "pandas>=3.0.6",
+    "protobuf>=7.36.2",
+    "sentencepiece>=0.2.2",
+    "tokenizers>=0.23.2",
+    "torch>=2.14.1",
+    "transformers>=5.18.0",
+]
+
+[project.scripts]
+sametokens = "sametokens.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["ignore"]
+
+[tool.ruff]
+line-length = 120
+extend-exclude = ["third_party", "js"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "B", "I"]
+ignore = ["B905"]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
