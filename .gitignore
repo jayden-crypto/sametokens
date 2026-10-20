@@ -15,3 +15,5 @@ gguf/
 third_party/
 js/node_modules/
 results/*.log
+
+.DS_Store
